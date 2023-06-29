@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family:'oriental';
+    src: url('Asiana.ttf') 
+    
+}
+
+:root{
+    --cor0: #F2E5D5;
+    --cor1: #D99A9A;
+    --cor2: #A60512;
+    --cor3: #73020C;
+    --cor4: #590202;
+    --fonte-padrao:  Arial, Helvetica, sans-serif;
+    --fonte-especial: 'oriental'
+    
+}
+body{
+    font-family:var(--fonte-padrao);
+    background-color: var(--cor1);
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+
+}
+header{
+    padding-top: 20px;
+    min-height: 150px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.439);
+
+}
+header>h1{
+    margin: auto;
+    font-family: var(--fonte-padrao);
+    color: white;
+padding: 10px ;
+text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.594);
+}
+main{
+
+    background-color:white;
+padding: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.539) ;
+border-radius: 0px 0px  20px 20px ;
+}
+main p{
+    font-size:large;
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2em;
+}
+main a { text-decoration: none;}
+h2{
+    font-family: var(--fonte-especial);
+color: var(--cor2);
+}
+.destaque {background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+img{width: 100%;}
+div.video{
+    background-color: var(--cor3);
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+div.video>iframe{
+    position:absolute;
+    top: 2%;
+    left: 2%;
+    width: 97%;
+    height: 95%;
+}
+
+section>aside{
+margin-bottom: 15px;
+}
+ul{background-color:var(--cor2) ;
+ margin: 10px;
+ border-radius: 20px;
+ padding: 10px 10px 10px 40px;}
+nav>a{
+ color: var(--cor0);
+padding:09px;
+transition-duration: 1s;
+}
+
+nav{
+background-color: var(--cor3);
+padding:10px;
+text-decoration: none;
+color:white;
+font-weight: bolder;
+margin-right:20px auto;
+
+}
+a:hover{
+    border-radius: 05px;
+background-color:var(--cor2);
+color: var(--cor1);
+}
+section>p>a{
+color:#A60321;
+font-weight: bold;}
+section>p>a:hover{
+background-color:#D93D04;
+color: white;
+}
+aside{padding-top: 15px;
+padding-bottom: 0px;
+}
+aside>p> a{
+text-decoration: none;
+color: var(--cor2);
+}
+aside>p>a::after{content : '\0020\1F517';}
+    footer>p{
+        color: white;
+        padding: 05px;
+    }
+    footer{background-color: var(--cor4);
+    border-radius: 15px;}
+    footer>p>a{
+        color: var(--cor2);
+        text-decoration:none;   
+    }
+    
